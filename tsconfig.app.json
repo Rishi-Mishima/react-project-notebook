@@ -38,7 +38,13 @@
       ], // 指定 @utils 的路径
       "@assets/*": [
         "assets/*"
-      ] // 指定 @assets 的路径
+      ], // 指定 @assets 的路径
+      "@router/*": [
+        "src/router/*"
+      ], //// 指定 @router 的路径
+      "@pages/*": [
+        "src/pages/*"
+      ],
     }
   },
   "include": [
