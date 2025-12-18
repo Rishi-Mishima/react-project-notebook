@@ -9,6 +9,11 @@ const Layout = () => {
 
             {/* 全局生效样式 */}
             <Button color='primary'>global button</Button>
+
+            {/* 局部生效样式 */}
+            <div className="puple">
+                <Button color='success'>local button</Button>
+            </div>
         </div>
     )
 }

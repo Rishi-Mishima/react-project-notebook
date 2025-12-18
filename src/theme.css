@@ -1,3 +1,16 @@
 :root:root {
-    --adm-color-primary: #a062d4
+
+    /* color="primary"
+   ↓
+使用 CSS 变量 --adm-color-primary
+   ↓
+你在 :root 里定义了它
+   ↓
+按钮显示成 #a062d4 */
+
+    --adm-color-primary: rgb(105, 174, 120);
+}
+
+.purple {
+    --adm-color-success: #00b578;
 }
