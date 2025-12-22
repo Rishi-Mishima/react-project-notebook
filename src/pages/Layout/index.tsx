@@ -1,6 +1,6 @@
 import { TabBar } from "antd-mobile"
 import { useEffect } from "react"
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 import { useDispatch } from 'react-redux'
 import { getBillList } from "../../store/modules/billStore";
 import './index.scss'
@@ -33,13 +33,19 @@ const Layout = () => {
     useEffect(() => {
         dispatch(getBillList())
     }, [dispatch])
+
+    const navigate = useNavigate();
+    const switchoRoute = (path) => {
+        console.log(path)
+        navigate(path)
+    }
     return (
         <div className="layout">
             <div className="container">
                 <Outlet />
             </div>
             <div className="footer">
-                <TabBar>
+                <TabBar onChange={switchoRoute}>
                     {tabs.map(item => (
                         <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
                     ))}
