@@ -1,0 +1,48 @@
+.year {
+    padding: 16px;
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .item {
+            padding: 16px;
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .label {
+                font-size: 14px;
+                color: #6b7280;
+            }
+
+            .value {
+                font-size: 18px;
+                font-weight: 700;
+
+                &.pay {
+                    color: #ef4444;
+                }
+
+                &.income {
+                    color: #22c55e;
+                }
+
+                &.balance {
+                    color: #6366f1;
+                }
+            }
+        }
+    }
+}
