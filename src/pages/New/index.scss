@@ -1,0 +1,53 @@
+.new {
+    padding: 16px;
+    min-height: 100vh;
+    background: #f6f7fb;
+
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: #0f172a;
+    }
+
+    .form-item {
+        margin-bottom: 20px;
+
+        .label {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        /* antd-mobile Radio 样式微调 */
+        .adm-radio-group {
+            display: flex;
+            gap: 20px;
+
+            .adm-radio {
+                font-size: 15px;
+            }
+        }
+
+        /* antd-mobile Input 微调 */
+        .adm-input {
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    /* 保存按钮 */
+    .adm-button {
+        margin-top: auto;
+        /* 👉 把按钮顶到底部 */
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
