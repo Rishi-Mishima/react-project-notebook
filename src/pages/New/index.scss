@@ -2,37 +2,36 @@
     padding: 16px;
     min-height: 100vh;
     background: #f6f7fb;
-
     display: flex;
     flex-direction: column;
 
     .title {
         font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 24px;
+        font-weight: 800;
+        margin-bottom: 18px;
         color: #0f172a;
+        letter-spacing: 0.2px;
     }
 
     .form-item {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
 
         .label {
-            font-size: 14px;
+            font-size: 13px;
             color: #6b7280;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
-        /* antd-mobile Radio 样式微调 */
         .adm-radio-group {
             display: flex;
             gap: 20px;
-
-            .adm-radio {
-                font-size: 15px;
-            }
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         }
 
-        /* antd-mobile Input 微调 */
         .adm-input {
             background: #fff;
             border-radius: 12px;
@@ -42,12 +41,54 @@
         }
     }
 
-    /* 保存按钮 */
-    .adm-button {
-        margin-top: auto;
-        /* 👉 把按钮顶到底部 */
-        border-radius: 14px;
+    .cat-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .cat {
+            border: none;
+            border-radius: 12px;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            color: #0f172a;
+            transition: transform 0.12s ease;
+
+            &:active {
+                transform: scale(0.98);
+            }
+
+            &.active {
+                background: rgba(160, 98, 212, 0.18);
+                color: #5b21b6;
+            }
+        }
+    }
+
+    .date-btn {
+        width: 100%;
+        border: none;
+        text-align: left;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: #fff;
         font-size: 16px;
         font-weight: 600;
+        color: #0f172a;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+        &:active {
+            opacity: 0.9;
+        }
+    }
+
+    .adm-button {
+        margin-top: auto;
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 700;
     }
 }
