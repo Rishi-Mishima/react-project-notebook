@@ -31,6 +31,15 @@ const getBillList = () => {
 }
 export { getBillList }
 
+// ⭐ 新增：POST 新账单
+export const addBillAsync = createAsyncThunk(
+    'bill/addBill',
+    async (newBill: any) => {
+        const res = await axios.post('/api/ka', newBill)
+        return res.data
+    }
+)
+
 // 导出reducer
 const reducer = billStore.reducer
 
